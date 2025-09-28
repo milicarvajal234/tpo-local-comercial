@@ -1,0 +1,62 @@
+/* ===== Archivo: style.css ===== */
+
+:root{ --negro:#2f2f2f; --dorado:#d9b24c; --gris:#f5f5f5; --acento:#0e7c86; }
+html{ scroll-behavior:smooth }
+body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--negro); background:#fff; line-height:1.5; }
+
+/* Header + Nav */
+header{ border-bottom:1px solid #e9e9e9; position:sticky; top:0; background:#fff; z-index:10; }
+.nav{ max-width:1000px; margin:0 auto; padding:12px 16px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.logo{ display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.3px }
+.logo-mark{ width:28px; height:28px; border-radius:6px; background:var(--dorado); display:inline-block }
+.logo span{ color:var(--acento) }
+nav ul{ list-style:none; margin:0; padding:0; display:flex; gap:14px; flex-wrap:wrap }
+nav a{ text-decoration:none; color:var(--negro); padding:6px 8px; border-radius:8px }
+nav a:hover{ background:var(--gris) }
+
+/* Hero */
+.hero{ display:flex; gap:18px; max-width:1000px; margin:24px auto; padding:0 16px; align-items:stretch }
+.hero-text{ flex:1; display:flex; flex-direction:column; justify-content:center; gap:10px }
+.hero h1{ font-size: clamp(24px, 4vw, 36px); margin:0 }
+.hero p{ margin:0 }
+.hero-cta{ display:flex; gap:10px; margin-top:8px }
+.btn{ display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid var(--negro); background:#fff }
+.btn--fill{ background:var(--dorado); border-color:var(--dorado) }
+.hero-media{ flex:1; }
+.hero-media img{ width:100%; height:100%; max-height:320px; object-fit:cover; border-radius:14px; display:block }
+
+/* Secciones */
+section{ padding:40px 16px }
+.wrap{ max-width:1000px; margin:0 auto }
+h2{ font-size: clamp(20px, 3vw, 28px); margin:0 0 14px }
+.lead{ color:#555 }
+
+/* Nosotros */
+.nosotros{ background:var(--gris); border-top:1px solid #eee; border-bottom:1px solid #eee }
+.nos-grid{ display:flex; gap:16px; align-items:stretch }
+.nos-media img{ width:100%; height:100%; max-height:260px; object-fit:cover; border-radius:12px; display:block }
+.nos-text{ flex:1 }
+
+/* Productos / Servicios */
+.cards{ display:flex; flex-wrap:wrap; gap:14px }
+.card{ flex:1 1 220px; border:1px solid #e6e6e6; border-radius:12px; overflow:hidden; background:#fff; display:flex; flex-direction:column }
+.card-media img{ width:100%; height:160px; object-fit:cover; display:block }
+.card-body{ padding:12px }
+.card-body h3{ margin:0 0 6px }
+.price{ font-weight:700; color:var(--acento) }
+
+/* Contacto */
+.contacto{ background:var(--gris); border-top:1px solid #eee }
+.contact-grid{ display:flex; gap:16px; flex-wrap:wrap }
+.box{ flex:1 1 260px; background:#fff; border:1px solid #e6e6e6; border-radius:12px; padding:14px }
+.map{ min-height:220px; border-radius:12px; border:1px solid #e6e6e6; width:100% }
+
+/* Footer */
+footer{ border-top:1px solid #eee; padding:18px 16px; font-size:14px; color:#666; text-align:center }
+
+/* Responsive */
+@media (max-width: 800px){
+  .hero{ flex-direction:column }
+  .nos-grid{ flex-direction:column }
+  nav ul{ gap:8px }
+}

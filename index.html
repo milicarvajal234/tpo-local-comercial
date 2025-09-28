@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TecnoGalería — Accesorios & Servicio Técnico</title>
+  <meta name="description" content="Sitio informativo simple para un local dentro de una galería. Inicio, Nosotros, Productos/Servicios y Contacto." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a class="logo" href="#inicio" aria-label="Inicio">
+        <i class="logo-mark" aria-hidden="true"></i>
+        Tecno<span>Galería</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#productos">Productos / Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Inicio -->
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+        <h1>Accesorios que resuelven, servicio técnico claro</h1>
+        <p class="lead">Estamos dentro de la <strong>Galería Central</strong>. Accesorios para tu teléfono y notebook, instalación de films templados al instante y servicio técnico básico (baterías, pantallas y limpieza) dentro de la galería. Mirá acá lo esencial: quiénes somos, qué ofrecemos y cómo ubicarnos.</p>
+        <div class="hero-cta">
+          <a class="btn btn--fill" href="#productos">Ver productos</a>
+          <a class="btn" href="#contacto">Cómo llegar</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mostrador con notebook y accesorios" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="nosotros">
+      <div class="wrap nos-grid">
+        <div class="nos-media">
+          <img src="https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Interior del local con accesorios" loading="lazy" />
+        </div>
+        <div class="nos-text">
+          <h2>Nosotros / Historia</h2>
+          <p class="lead">Abrimos en 2023 para cubrir compras rápidas de accesorios y arreglos simples sin turnos. Nuestro estilo es directo: precios a la vista, recambios básicos en el acto y repuestos por pedido en 72 h. Si no está, te lo pedimos y te avisamos por WhatsApp en cuanto llega.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos / Servicios -->
+    <section id="productos">
+      <div class="wrap">
+        <h2>Productos / Servicios</h2>
+        <p class="lead">Un vistazo rápido. Las imágenes son de referencia.</p>
+
+        <div class="cards" aria-label="Listado de productos o servicios">
+          <article class="card">
+            <figure class="card-media">
+              <img src="https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Colocación de vidrio templado para celular" loading="lazy" />
+            </figure>
+            <div class="card-body">
+              <h3>Colocación de vidrio templado</h3>
+              <p>Protección 9H para tu pantalla. Incluye limpieza y colocación profesional.</p>
+              <p class="price">Desde $4.500</p>
+            </div>
+          </article>
+
+
+          <article class="card">
+            <figure class="card-media">
+              <img src="https://images.pexels.com/photos/4792720/pexels-photo-4792720.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Reparación básica de placas y recambio de baterías" loading="lazy" />
+            </figure>
+            <div class="card-body">
+              <h3>Servicio técnico rápido</h3>
+              <p>Recambio de baterías y pantallas, limpieza interna y diagnóstico express.</p>
+              <p class="price">Mano de obra desde $18.000</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <figure class="card-media">
+              <img src="https://images.pexels.com/photos/3394655/pexels-photo-3394655.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Auriculares y fundas" loading="lazy" />
+            </figure>
+            <div class="card-body">
+              <h3>Auriculares & fundas</h3>
+              <p>In‑ear, over‑ear y fundas antishock por modelo. Probá antes de comprar.</p>
+              <p class="price">Desde $9.900</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+      <div class="wrap">
+        <h2>Ubicación y Contacto</h2>
+        <div class="contact-grid">
+          <div class="box">
+            <h3 style="margin-top:0">Datos básicos</h3>
+            <p><strong>Dirección:</strong> Local 17, Galería Central (planta baja)</p>
+            <p><strong>Teléfono:</strong> 11 3456-7890</p>
+            <p><strong>Mail:</strong> contacto@puntogaleria.com</p>
+            <p><strong>Redes:</strong> <a href="#">Instagram</a> · <a href="#">Facebook</a></p>
+            <p><em>Horario:</em> Lun a Sáb, 10 a 19 h</p>
+          </div>
+          <div class="box" style="flex:2 1 400px">
+            <h3 style="margin-top:0">Mapa (referencial)</h3>
+            <iframe class="map" title="Mapa de referencia" loading="lazy"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-58.384%2C-34.608%2C-58.37%2C-34.6&amp;layer=mapnik"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="anio"></span> TecnoGalería · Sitio informativo simple
+  </footer>
+
+  <script>
+    document.getElementById('anio').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
